@@ -1,0 +1,19 @@
+.TeamsContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.TeamsCard{
+  max-width: 30rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.TeamsCardImage{
+  max-width: 6rem;
+
+}
+.TeamsCardTitle{
+  
+}
