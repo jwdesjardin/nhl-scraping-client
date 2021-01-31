@@ -1,0 +1,23 @@
+.navContainer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+}
+
+.button {
+  background-color: black;
+  height: 100%;
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid white;
+}
+.button a {
+  
+  color: white;
+}
+

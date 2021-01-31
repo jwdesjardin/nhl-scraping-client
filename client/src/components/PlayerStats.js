@@ -12,7 +12,6 @@ const PlayerStats = () => {
 						<th>Player</th>
 						<th>AGE</th>
 						<th>TEAM</th>
-
 						<th>POS</th>
 						<th>GP</th>
 						<th>G</th>

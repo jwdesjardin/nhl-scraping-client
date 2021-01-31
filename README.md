@@ -1,21 +1,40 @@
 # nhl-scraping-client
 
 ## pages 
-[] /teams
+[x] /teams
   *Components*
-  [] Teams
-[] /team/id
+  [x] Teams
+[x] /team/id
   *Components*
-  [] TeamRosterStats
-  [] TeamScoringStats
-[] /players
+  [x] TeamRosterStats
+  [x] TeamScoringStats
+[x] /players
   *Components*
-  [] player stats
+  [x] player stats
 
 *Utility Components*
-[] navbuttons
+[x] navbuttons
 
 ## store
+[] create reducers
+  [] FETCH_TEAM_ROSTER
+  [] FETCH_TEAM_SCORING
+  [] FETCH_PLAYER_SCORING
+[] create store
+[] create actions
+  [] getTeamRoster
+  [] getTeamScoring
+  [] getPlayerScoring
+
+```js
+//example store object
+store = {
+  teams : [{}, {}, ...],
+  currentTeamRoster : [{}, {}, ...],
+  currentTeamScoring : [{}, {}, ...],
+  playerScoring : [{}, {}, ...]
+}
+```
 
 
 ## dependencies
