@@ -3,7 +3,11 @@ import utilStyles from '../styles/utils.module.css';
 
 import teamScoring from '../data/teamScoring.js';
 
+import { useSelector } from 'react-redux';
+
 const TeamScoringStats = () => {
+	const teamScoring = useSelector(state => state.teamScoring);
+	const { data, loading, error } = teamScoring;
 	return (
 		<div className={utilStyles.tableContainer}>
 			<table className={utilStyles.table}>
@@ -29,8 +33,8 @@ const TeamScoringStats = () => {
 					</tr>
 				</thead>
 				<tbody>
-					{teamScoring.length > 0 &&
-						teamScoring.map(player => (
+					{data.length > 0 &&
+						data.map(player => (
 							<tr key={player._id}>
 								<td data_id='name'>{player.name}</td>
 								<td data_id='position'>{player.position}</td>
